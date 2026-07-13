@@ -24,3 +24,7 @@ with col2:
 with col3:
     if st.button("📊 Ver Relatórios", use_container_width=True):
         st.write("Você clicou em Relatórios!")
+
+with col4:
+    if st.button("📊 Ver Relatórios", use_container_width=True):
+        st.write("Você clicou em Relatórios!")
