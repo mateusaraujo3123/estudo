@@ -3,7 +3,7 @@ import streamlit as st
 # 1. Configuração da Página (Diz ao navegador o título e o tamanho da tela)
 st.set_page_config(
     page_title="Mercadinho",
-    layout="centered"  # Faz o site ocupar a tela inteira (da esquerda para a direita)
+    layout="wide"  # Faz o site ocupar a tela inteira (da esquerda para a direita)
 )
 
 # 2. Criando o Título Principal
