@@ -1,4 +1,4 @@
-import streamlit as str
+import streamlit as st
 
 # 1. Configuração da Página (Diz ao navegador o título e o tamanho da tela)
 st.set_page_config(
