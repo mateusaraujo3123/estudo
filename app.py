@@ -9,8 +9,9 @@ st.set_page_config(
 # 2. Criando o Título Principal
 st.title("🛍️ MERCADINHO Portal Da Vila")
 # 3. Criando as Colunas (O esqueleto invisível para colocar objetos lado a lado)
-# Aqui criamos 3 colunas de tamanhos exatamente iguais
-col1, col2, col3, col4 = st.columns(4)
+# Aqui criamos as colunas de tamanhos exatamente iguais st.columns(4) é oque diz (tem que ser iguais todas o tamanho)
+# basta colocar (col) e o numero e a virgula, no final dar = st.columns(quantidade de colunas)
+col1, col2, col3, col4 = st.columns(3)
 
 # 4. Colocando um botão dentro de cada coluna usando o comando 'with'
 with col1:
