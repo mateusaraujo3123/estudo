@@ -28,4 +28,3 @@ with col3:
 
 with col4:
     if st.button("📊 Ver Rela", use_container_width=True):
-        st.write("Você clicou em Rela!")
