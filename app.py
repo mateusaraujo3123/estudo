@@ -9,6 +9,7 @@ st.set_page_config(
 # 2. Criando o Título Principal
 st.title("🛍️ MERCADINHO Portal Da Vila")
 st.title("teste")
+layout="wide"
 # 3. Criando as Colunas (O esqueleto invisível para colocar objetos lado a lado)
 # Aqui criamos 3 colunas de tamanhos exatamente iguais
 col1, col2, col3 = st.columns(3)
