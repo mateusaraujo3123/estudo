@@ -13,7 +13,6 @@ st.title("🛍️ MERCADINHO Portal Da Vila")
 # basta colocar (col) e o numero e a virgula, e no final colocar = st.columns(quantidade de colunas) para padronizar os tamanhos
 col1, col2, col3, col4 = st.columns(4)
 col5, col6, col7, col8 = st.columns(4)
-col5, col6, col7, col8 = st.columns(4)
 
 # 4. Colocando um botão dentro de cada coluna usando o comando 'with'
 with col1:
