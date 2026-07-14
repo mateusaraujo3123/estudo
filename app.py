@@ -14,7 +14,13 @@ def local_css(file_name):
 # Aplica o estilo do arquivo separado
 local_css("style.css")
 
-St.title("IA´s")
+# --- COMPONENTE DO CABEÇALHO (HEADER) ---
+st.markdown("""
+    <div class="header-container">
+        <div class="header-title">🛍️ MERCADINHO Portal Da Vila</div>
+        <div class="status-badge">🟢 online</div>
+    </div>
+""", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 
