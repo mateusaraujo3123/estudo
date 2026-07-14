@@ -59,7 +59,7 @@ div.stButton > button {
 
 /* Estilo definitivo e alinhado para o st.link_button */
 div[data-testid="stLinkButton"] {
-    width: 250px !important; /* Garante que a caixinha ocupe toda a coluna */
+    width: 550px !important; /* Garante que a caixinha ocupe toda a coluna */
 }
 
 div[data-testid="stLinkButton"] a {
