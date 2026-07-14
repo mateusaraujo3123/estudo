@@ -1,0 +1,64 @@
+/* Altera o fundo geral da aplicação */
+.stApp {
+    background-color: #0b0a14 !important;
+}
+
+/* Remove margens extras do Streamlit no topo */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+/* Estilo do cabeçalho roxo principal */
+.header-container {
+    background-color: #4a0e7d;
+    border-radius: 12px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Texto do Mercadinho */
+.header-title {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Botão de status online */
+.status-badge {
+    background-color: #143d22;
+    color: #5cd67d;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Estilo dos botões inferiores (Altere a altura no padding e largura no width) */
+div.stButton > button {
+    background-color: #3b1175 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 18px 20px !important; /* Primeiro número controla a altura */
+    font-size: 14px !important;
+    font-weight: bold !important;
+    width: 100% !important; /* 100% ocupa toda a coluna */
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito de hover ao passar o mouse */
+div.stButton > button:hover {
+    background-color: #4c1696 !important;
+    color: #ffffff !important;
+}
