@@ -57,18 +57,6 @@ div.stButton > button {
     transition: background-color 0.2s ease;
 }
 
-div.stlink_button > button {
-    background-color: #3b1175 !important;
-    color: #ffffff !important;
-    border: none !important;
-    border-radius: 10px !important;
-    padding: 18px 20px !important; /* Primeiro número controla a altura */
-    font-size: 14px !important;
-    font-weight: bold !important;
-    width: 500% !important; /* 100% ocupa toda a coluna */
-    transition: background-color 0.2s ease;
-}
-
 div.stLinkButton > a:hover {
     background-color: #4c1696 !important;
     color: #ffffff !important;
