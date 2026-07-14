@@ -53,14 +53,8 @@ div.stButton > button {
     padding: 18px 20px !important; /* Primeiro número controla a altura */
     font-size: 14px !important;
     font-weight: bold !important;
-    width: 500% !important; /* 100% ocupa toda a coluna */
+    width: 250px !important;
     transition: background-color 0.2s ease;
-}
-
-div.stLinkButton > a:hover {
-    background-color: #4c1696 !important;
-    color: #ffffff !important;
-    text-decoration: none !important;
 }
 
 /* Efeito de hover ao passar o mouse */
