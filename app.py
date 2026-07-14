@@ -19,3 +19,4 @@ with col2:
 with col3:
     if  st.link_button("abrir contar", "https://portmercado.streamlit.app/"):
         st.toast("Abrindo Contas a Receber...")
+        st.text("Abrindo Contas a Receber...")
