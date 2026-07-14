@@ -6,6 +6,13 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+def local_css(file_name):
+    with open(file_name, "r", encoding="utf-8") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Aplica o estilo do arquivo separado
+local_css("style.css")
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
