@@ -17,7 +17,6 @@ with col2:
         st.toast("Abrindo tabela de Preços...")
 
 with col3:
-    if st.button("📋 CONTAS A RECEBER", key="btn_contas"):
+    if  st.link_button("abrir contar", "https://portmercado.streamlit.app/":
         st.toast("Abrindo Contas a Receber...")
-        st.link_button("abrir contar", "https://portmercado.streamlit.app/"
 )
