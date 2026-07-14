@@ -57,7 +57,7 @@ div.stButton > button {
     transition: background-color 0.2s ease;
 }
 
-div.stlink > button {
+div.stlink_button > button {
     background-color: #3b1175 !important;
     color: #ffffff !important;
     border: none !important;
