@@ -57,6 +57,41 @@ div.stButton > button {
     transition: background-color 0.2s ease;
 }
 
+/* Estilo definitivo e alinhado para o st.link_button */
+div[data-testid="stLinkButton"] {
+    width: 100% !important; /* Garante que a caixinha ocupe toda a coluna */
+}
+
+div[data-testid="stLinkButton"] a {
+    background-color: #3b1175 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    
+    /* ALTURA: Altere o 18px se quiser o botão mais alto ou mais baixo */
+    padding: 18px 20px !important; 
+    
+    font-size: 14px !important;
+    font-weight: bold !important;
+    width: 100% !important; /* Faz o link preencher o tamanho do botão */
+    
+    /* Remove o sublinhado de link e centraliza o texto perfeitamente */
+    text-decoration: none !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito de hover (passar o mouse) no botão de link */
+div[data-testid="stLinkButton"] a:hover {
+    background-color: #4c1696 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+
 /* Efeito de hover ao passar o mouse */
 div.stButton > button:hover {
     background-color: #4c1696 !important;
