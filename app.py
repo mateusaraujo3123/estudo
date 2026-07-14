@@ -16,6 +16,7 @@ with col2:
     if st.button("FACEBOOK"):
        st.link_button("entra no Facebook", "HTTPS://www.facebook.com" use_container_widht=true
        )
+       
 with col3:
     if st.button("google"):
        st.link_button("entra no Google", "HTTPS://www.google.com")
