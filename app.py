@@ -6,14 +6,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- COMPONENTE DO CABEÇALHO (HEADER) ---
-st.markdown("""
-    <div class="header-container">
-        <div class="header-title">🛍️ MERCADINHO Portal Da Vila</div>
-        <div class="status-badge">🟢 online</div>
-    </div>
-""", unsafe_allow_html=True)
-
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -27,3 +19,5 @@ with col2:
 with col3:
     if st.button("📋 CONTAS A RECEBER", key="btn_contas"):
         st.toast("Abrindo Contas a Receber...")
+        st.link_button("abrir contar", "https://portmercado.streamlit.app/"
+)
