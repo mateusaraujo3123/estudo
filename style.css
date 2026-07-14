@@ -69,6 +69,12 @@ div.stlink_button > button {
     transition: background-color 0.2s ease;
 }
 
+div.stLinkButton > a:hover {
+    background-color: #4c1696 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
 /* Efeito de hover ao passar o mouse */
 div.stButton > button:hover {
     background-color: #4c1696 !important;
