@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="MERCADINHO Portal Da Vila",
+    page_title="MEU PAINEL",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -17,6 +17,6 @@ with col2:
         st.toast("Abrindo tabela de Preços...")
 
 with col3:
-    if  st.link_button("abrir contar", "https://portmercado.streamlit.app/":
+    if  st.link_button("abrir contar", "https://portmercado.streamlit.app/"):
         st.toast("Abrindo Contas a Receber...")
 )
