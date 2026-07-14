@@ -17,8 +17,7 @@ local_css("style.css")
 # --- COMPONENTE DO CABEÇALHO (HEADER) ---
 st.markdown("""
     <div class="header-container">
-        <div class="header-title">🛍️ MERCADINHO Portal Da Vila</div>
-        <div class="status-badge">🟢 online</div>
+        <div class="header-title">IA´s</div>
     </div>
 """, unsafe_allow_html=True)
 
