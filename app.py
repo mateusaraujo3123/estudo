@@ -14,6 +14,8 @@ def local_css(file_name):
 # Aplica o estilo do arquivo separado
 local_css("style.css")
 
+St.title("IA´s")
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
