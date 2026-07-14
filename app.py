@@ -17,11 +17,11 @@ local_css("style.css")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.link_button("👥 FIADOS"):
+    if st.link_button("👥 FIADOS", "https://portmercado.streamlit.app/"):
         st.toast("Abrindo painel de Fiados...")
 
 with col2:
-    if st.link_button("📦 PREÇOS"):
+    if st.link_button("📦 PREÇOS", "https://portmercado.streamlit.app/"):
         st.toast("Abrindo tabela de Preços...")
 
 with col3:
