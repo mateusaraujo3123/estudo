@@ -20,4 +20,5 @@ with col2:
        
 with col3:
     if st.button("google"):
-       st.link_button("entra no Google", "HTTPS://www.google.com")
+       st.link_button("entra no Google", "HTTPS://www.google.com", use_container_width=True
+)
