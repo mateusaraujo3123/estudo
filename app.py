@@ -17,11 +17,11 @@ local_css("style.css")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("👥 FIADOS", key="btn_fiados"):
+    if st.link_button("👥 FIADOS", key="btn_fiados"):
         st.toast("Abrindo painel de Fiados...")
 
 with col2:
-    if st.button("📦 PREÇOS", key="btn_precos"):
+    if st.link_button("📦 PREÇOS", key="btn_precos"):
         st.toast("Abrindo tabela de Preços...")
 
 with col3:
