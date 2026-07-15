@@ -14,6 +14,18 @@ def local_css(file_name):
 # Aplica o estilo do arquivo separado
 local_css("style.css")
 
+def criar_titulo(texto):
+    linha = "=" * (len(texto) + 4)
+    print(linha)
+    print(f"  {texto.upper()}  ")
+    print(linha)
+
+criar_titulo("Menu Principal")
+# Saída:
+# ==================
+#   MENU PRINCIPAL  
+# ==================
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
