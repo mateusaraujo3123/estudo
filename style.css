@@ -49,6 +49,12 @@
    text-align: center;
 }
 
+.siteuteis
+   text-align: center;
+
+.facilidades
+   text-align: center;
+
 /* ==========================================================================
    3. BOTÕES NATIVOS DO STREAMLIT (st.link_button)
    ========================================================================== */
