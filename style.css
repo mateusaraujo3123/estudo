@@ -29,7 +29,7 @@
 
 /* PILULA VERDE (STATUS ONLINE) */
 .status-online {
-    background-color: #22c55e; /* Define a cor de fundo verde viva */
+    background-color: #00012E; /* Define a cor de fundo */
     color: #ffffff;            /* Define a cor do texto "online" como branca */
     font-family: 'Segoe UI', sans-serif; /* Define a fonte do texto do status */
     font-size: 13px;           /* Tamanho de letra ligeiramente menor para o status */
