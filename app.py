@@ -6,10 +6,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-texto = "como criar titulos em python"
-print(texto.title())
-# Saída: Como Criar Titulos Em Python
-
+st.title("Meu Primeiro Site em Python")
 
 col1, col2, col3 = st.columns(3)
 
