@@ -33,14 +33,14 @@ st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allo
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.link_button("👥 FIADOS", "https://portmercado.streamlit.app/"):
+    if st.link_button("CHAT GPT", "https://portmercado.streamlit.app/"):
         st.toast("Abrindo painel de Fiados...")
 
 with col2:
-    if st.link_button("📦 PREÇOS", "https://portmercado.streamlit.app/"):
+    if st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/"):
        st.toast("Abrindo tabela de Preços...")
 
 with col3:
-    if  st.link_button("abrir contar", "https://portmercado.streamlit.app/"):
+    if  st.link_button("LOVABLE", "https://portmercado.streamlit.app/"):
         st.toast("Abrindo Contas a Receber...")
         st.text("Abrindo Contas a Receber...")
