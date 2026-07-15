@@ -14,11 +14,11 @@
 .meu-titulo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do texto. Se o computador do usuário não tiver 'Segoe UI', ele tentará usar Tahoma, depois Geneva, e assim por diante. */
     font-size: 45px; /* tamanho da letra do título */
-    font-weight: black; /* Deixa a letra em negrito. (estilo da fonte) italic pode ser usado */
+    font-weight: bold; /* Deixa a letra em negrito. (estilo da fonte) italic pode ser usado */
     color: #A020F0; /* Verde Neon */
     text-shadow: 0px 0px 10px rgba(109, 0, 117, 0.3); /* Cor do Neon de traz --- rgba(0, 255, 136) codigo de cor ----- (0.3) intensidade */
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* alinhamento do texto --- center = centralizado no meio da pagina*/
+    margin-top: 20px; /* Cria um espaço vazio de 20 pixels acima do título para ele não ficar colado no topo da página. */
 }
 
 /* Estilo para o Subtítulo */
