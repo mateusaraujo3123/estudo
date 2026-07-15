@@ -16,7 +16,7 @@ def injetor_css_externo(caminho_arquivo):
 injetor_css_externo("style.css")
 
 # 2. Seu conteúdo do site com as classes limpas
-st.markdown('<h1 class="meu-titulo">COISAS TALVEZ UTEIS</h1>', unsafe_allow_html=False)
+st.markdown('<h1 class="meu-titulo">COISAS TALVEZ UTEIS</h1>', unsafe_allow_html=True)
 st.markdown('<p class="meu-subtitulo">Por Matheus Araujo</p>', unsafe_allow_html=True)
 
 st.title("IA´s")
