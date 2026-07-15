@@ -1,88 +1,71 @@
-/* Altera o fundo geral da aplicação */
+/* ==========================================================================
+   1. CONFIGURAÇÃO DA PÁGINA (FUNDO DO SITE)
+   ========================================================================== */
 .stApp {
-    background-color: #0b0a14 !important;
+    background-color: #0c0f19; /* Define a cor de fundo de todo o site (azul escuro/preto) */
 }
 
-/* Remove margens extras do Streamlit no topo */
-.main .block-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    max-width: 1200px;
-}
-
-/* Estilo para o Título Principal COISAS TALVEZ UTEIS */
-.meu-titulo { /* O nome da classe que você criou para aplicar no seu <h1>. lá no app.py*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do texto. Se o computador do usuário não tiver 'Segoe UI', ele tentará usar Tahoma, depois Geneva, e assim por diante. */
-    font-size: 45px; /* tamanho da letra do título */
-    font-weight: bold; /* Deixa a letra em negrito. (estilo da fonte) italic pode ser usado */
-    color: #A020F0; /* Verde Neon */
-    text-shadow: 0px 0px 10px rgba(109, 0, 117, 0.3); /* Cor do Neon de traz --- rgba(0, 255, 136) codigo de cor ----- (0.3) intensidade */
-    text-align: center; /* alinhamento do texto --- center = centralizado no meio da pagina*/
-    margin-top: 20px; /* Cria um espaço vazio de 20 pixels acima do título para ele não ficar colado no topo da página. */
-}
-
-/* Estilo para o Subtítulo */
-.meu-subtitulo { /* O nome da classe que você criou para aplicar na tag <p> do subtítulo. lá no app.py */
-    font-size: 20px;
-    color: #a8a8b3;
-    text-align: center;
-    margin-bottom: 30px; /* Cria um espaço vazio de 30 pixels abaixo do subtítulo, empurrando os próximos elementos do site para baixo para o visual respirar. /*
-}
-
-/* Container principal do Cabeçalho */
+/* ==========================================================================
+   2. CABEÇALHO ROXO (CONTAINER PRINCIPAL)
+   ========================================================================== */
 .cabecalho-container {
-    display: flex;
-    justify-content: space-between; /* Joga o texto para a esquerda e o status para a direita */
-    align-items: center;            /* Alinha os dois verticalmente no centro */
-    background-color: #5d158a;     /* Cor roxa idêntica à imagem */
-    padding: 15px 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    display: flex;             /* Ativa o modo Flexbox para alinhar elementos lado a lado */
+    justify-content: space-between; /* Empurra o título para a esquerda e o status online para a direita */
+    align-items: center;       /* Centraliza verticalmente o título e o status no meio da barra */
+    background-color: #5d158a; /* Define a cor roxa idêntica à da imagem do seu projeto */
+    padding: 15px 25px;        /* Cria um espaçamento interno (15px cima/baixo, 25px lados) */
+    border-radius: 10px;       /* Deixa os 4 cantos da barra roxa arredondados */
+    margin-bottom: 25px;       /* Cria uma margem de espaço vazia abaixo da barra roxa */
 }
 
-/* Texto do Título dentro do cabeçalho */
+/* TEXTO DENTRO DO CABEÇALHO */
 .cabecalho-texto {
-    color: #ffffff;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0;
+    color: #ffffff;            /* Define a cor do texto do título como branca */
+    font-family: 'Segoe UI', sans-serif; /* Aplica uma fonte moderna e limpa ao título */
+    font-size: 22px;           /* Define o tamanho exato da letra do título */
+    font-weight: bold;         /* Deixa o texto do título em negrito */
+    margin: 0;                 /* Remove margens padrão que o navegador adiciona ao h2 */
 }
 
-/* Tag Verde "Online" */
+/* PILULA VERDE (STATUS ONLINE) */
 .status-online {
-    background-color: #22c55e;     /* Verde vivo */
-    color: #ffffff;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 6px 16px;
-    border-radius: 20px;            /* Deixa as bordas arredondadas como uma pílula */
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    background-color: #22c55e; /* Define a cor de fundo verde viva */
+    color: #ffffff;            /* Define a cor do texto "online" como branca */
+    font-family: 'Segoe UI', sans-serif; /* Define a fonte do texto do status */
+    font-size: 13px;           /* Tamanho de letra ligeiramente menor para o status */
+    font-weight: bold;         /* Deixa o texto "online" em negrito */
+    padding: 6px 16px;         /* Espaçamento interno para dar formato de botão (6px vertical, 16px horizontal) */
+    border-radius: 20px;       /* Deixa as bordas totalmente arredondadas em formato de pílula */
+    display: flex;             /* Ativa flexbox interno para o emoji e o texto ficarem alinhados */
+    align-items: center;       /* Centraliza o emoji e o texto horizontalmente na mesma linha */
+    gap: 6px;                  /* Cria um espaço de 6 pixels entre o emoji 🟢 e a palavra "online" */
 }
 
-/* Captura TODOS os st.link_button da sua página */
+/* ==========================================================================
+   3. BOTÕES NATIVOS DO STREAMLIT (st.link_button)
+   ========================================================================== */
+/* Aplica o estilo diretamente na tag <a> gerada pelo st.link_button */
 div[data-testid="stLinkButton"] a {
-    background-color: #5d158a !important; /* Roxo idêntica à imagem */
-    color: #ffffff !important;            /* Cor do texto branca */
-    border: none !important;              /* Remove as bordas cinzas padrão */
-    border-radius: 8px !important;        /* Cantos arredondados */
-    padding: 20px 10px !important;        /* Deixa o botão alto igual ao da imagem */
-    width: 100% !important;               /* Faz o botão preencher toda a coluna */
-    display: flex !important;
-    justify-content: center !important;   /* Centraliza o texto horizontalmente */
-    align-items: center !important;       /* Centraliza o texto verticalmente */
-    text-transform: uppercase;            /* Força texto em maiúsculo */
-    font-weight: bold !important;
-    text-decoration: none !important;     /* Remove sublinhado de link */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #5d158a !important; /* Força a cor roxa idêntica ao cabeçalho nos botões */
+    color: #ffffff !important;            /* Força a cor do texto de dentro do botão a ser branca */
+    border: none !important;              /* Remove completamente a borda cinza padrão do Streamlit */
+    border-radius: 8px !important;        /* Deixa os cantos dos botões levemente arredondados */
+    padding: 20px 10px !important;        /* Aumenta a altura interna do botão para ficar igual à imagem */
+    width: 100% !important;               /* Faz o botão preencher 100% da largura da coluna do Streamlit */
+    display: flex !important;             /* Ativa flexbox no botão para controlar a posição do texto */
+    justify-content: center !important;   /* Centraliza o texto do botão horizontalmente */
+    align-items: center !important;       /* Centraliza o texto do botão verticalmente */
+    text-transform: uppercase !important; /* Transforma automaticamente todo o texto em letras MAIÚSCULAS */
+    font-weight: bold !important;         /* Deixa o texto de dentro do botão em negrito */
+    text-decoration: none !important;     /* Remove o sublinhado de link padrão que o HTML coloca */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra preta sutil embaixo do botão */
+    transition: background-color 0.2s ease !important; /* Faz a troca de cor ao passar o mouse ser suave */
 }
 
-/* Efeito ao passar o mouse por cima do botão nativo */
+/* EFEITO AO PASSAR O MOUSE (HOVER) NOS BOTÕES NATIVOS */
 div[data-testid="stLinkButton"] a:hover {
-    background-color: #7925ab !important; /* Roxo mais claro ao passar o mouse */
-    color: #ffffff !important;
-    border: none !important;
+    background-color: #7925ab !important; /* Altera o fundo para um roxo mais claro quando o mouse está em cima */
+    color: #ffffff !important;            /* Garante que o texto continue branco no hover */
+    border: none !important;              /* Garante que nenhuma borda apareça no hover */
+    text-decoration: none !important;     /* Garante que nenhum sublinhado apareça no hover */
 }
