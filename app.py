@@ -39,10 +39,10 @@ with col1:
        st.toast("Bem Vindo")
         
 with col2:
-    if st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/"):
+    if st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/")
 
 with col3:
-    if  st.link_button("LOVABLE", "https://portmercado.streamlit.app/"):
+    if  st.link_button("LOVABLE", "https://portmercado.streamlit.app/")
 
 st.markdown('<h1 class="meu-titulo">IA´S</h1>', unsafe_allow_html=True)
 st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allow_html=True)
