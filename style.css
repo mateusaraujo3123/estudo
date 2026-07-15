@@ -11,7 +11,7 @@
 }
 
 /* Estilo para o Título Principal COISAS TALVEZ UTEIS */
-.meu-titulo {
+.meu-titulo { /* O nome da classe que você criou para aplicar no seu <h1>. lá no app.py*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do texto. Se o computador do usuário não tiver 'Segoe UI', ele tentará usar Tahoma, depois Geneva, e assim por diante. */
     font-size: 45px; /* tamanho da letra do título */
     font-weight: bold; /* Deixa a letra em negrito. (estilo da fonte) italic pode ser usado */
@@ -22,11 +22,11 @@
 }
 
 /* Estilo para o Subtítulo */
-.meu-subtitulo {
+.meu-subtitulo { /* O nome da classe que você criou para aplicar na tag <p> do subtítulo. lá no app.py */
     font-size: 20px;
     color: #a8a8b3;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Cria um espaço vazio de 30 pixels abaixo do subtítulo, empurrando os próximos elementos do site para baixo para o visual respirar. /*
 }
 
 /* Estilo do cabeçalho roxo principal */
@@ -73,6 +73,7 @@ div.stButton > button {
     font-size: 14px !important;
     font-weight: bold !important;
     width: 550px !important;
+    button-shadow: 0px 0px 10px rgba(109, 0, 117, 0.3);
     transition: background-color 0.2s ease;
 }
 
