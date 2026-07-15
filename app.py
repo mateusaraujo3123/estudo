@@ -30,7 +30,7 @@ injetor_css_externo("style.css")
 st.markdown('<h1 class="meu-titulo">IA´S</h1>', unsafe_allow_html=True)
 st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allow_html=True)
 
-st.toast("Bem Vindo")
+if st.toast("Bem Vindo")
 
 col1, col2, col3 = st.columns(3)
 
