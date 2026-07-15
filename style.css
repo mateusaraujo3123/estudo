@@ -12,10 +12,10 @@
     display: flex;             /* Ativa o modo Flexbox para alinhar elementos lado a lado */
     justify-content: space-between; /* Empurra o título para a esquerda e o status online para a direita */
     align-items: center;       /* Centraliza verticalmente o título e o status no meio da barra */
-    background-color: #5d158a; /* Define a cor roxa idêntica à da imagem do seu projeto */
+    background-color: #000287; /* Define a cor roxa idêntica à da imagem do seu projeto */
     padding: 15px 25px;        /* Cria um espaçamento interno (15px cima/baixo, 25px lados) */
     border-radius: 10px;       /* Deixa os 4 cantos da barra roxa arredondados */
-    margin-bottom: 25px;       /* Cria uma margem de espaço vazia abaixo da barra roxa */
+    margin-bottom: 10px;       /* Cria uma margem de espaço vazia abaixo da barra roxa */
 }
 
 /* TEXTO DENTRO DO CABEÇALHO */
