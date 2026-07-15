@@ -30,20 +30,18 @@ injetor_css_externo("style.css")
 st.markdown('<h1 class="meu-titulo">IA´S</h1>', unsafe_allow_html=True)
 st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allow_html=True)
 
+st.toast("Bem Vindo")
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
     if st.link_button("CHAT GPT", "https://portmercado.streamlit.app/"):
-        st.toast("Abrindo CHATGPT...")
 
 with col2:
     if st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/"):
-       st.toast("Abrindo GOOGLE AI...")
 
 with col3:
     if  st.link_button("LOVABLE", "https://portmercado.streamlit.app/"):
-        st.toast("Abrindo LOVABLE...")
-        st.text("Abrindo LOVABLE...")
 
 st.markdown('<h1 class="meu-titulo">IA´S</h1>', unsafe_allow_html=True)
 st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allow_html=True)
