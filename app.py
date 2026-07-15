@@ -40,9 +40,9 @@ with col1:
 
 with col2:
     if st.link_button("📦 PREÇOS", "https://portmercado.streamlit.app/"):
-        st.toast("Abrindo tabela de Preços...")
+       st.toast("Abrindo tabela de Preços...")
 
 with col3:
     if  st.link_button("abrir contar", "https://portmercado.streamlit.app/"):
-        st.toast("Abrindo Contas a Receber...")
+        st.toast("Abrindo Contas a Receber..."):
         st.text("Abrindo Contas a Receber...")
