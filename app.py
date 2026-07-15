@@ -6,14 +6,10 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# carregar o css da pagina style
-def local_css(file_name):
-    with open(file_name, "r", encoding="utf-8") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 texto = "como criar titulos em python"
 print(texto.title())
 # Saída: Como Criar Titulos Em Python
+
 
 col1, col2, col3 = st.columns(3)
 
