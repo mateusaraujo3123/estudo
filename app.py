@@ -6,8 +6,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-import streamlit as st
-
 def injetor_css_externo(caminho_arquivo):
     """Lê um arquivo .css puramente textual e injeta no Streamlit"""
     with open(caminho_arquivo, "r", encoding="utf-8") as f:
