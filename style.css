@@ -46,7 +46,7 @@
    ========================================================================== */
 /* Aplica o estilo diretamente na tag <a> gerada pelo st.link_button */
 div[data-testid="stLinkButton"] a {
-    background-color: #5d158a !important; /* Força a cor roxa idêntica ao cabeçalho nos botões */
+    background-color: #000287 !important; /* Força a cor roxa idêntica ao cabeçalho nos botões */
     color: #ffffff !important;            /* Força a cor do texto de dentro do botão a ser branca */
     border: none !important;              /* Remove completamente a borda cinza padrão do Streamlit */
     border-radius: 8px !important;        /* Deixa os cantos dos botões levemente arredondados */
