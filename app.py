@@ -56,4 +56,4 @@ with col2:
      st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/")
     
 with col3:
-      st.link_button("LOVABLE", "https://www.remove.bg/pt-br/upload")
+      st.link_button("remove.bg", "https://www.remove.bg/pt-br/upload")
