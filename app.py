@@ -17,8 +17,8 @@ def injetor_css_externo(caminho_arquivo):
 # ==========================================
 html_cabecalho = """
 <div class="cabecalho-container">
-    <h2 class="cabecalho-texto">🛍️ MERCADINHO Portal Da Vila</h2>
-    <div class="status-online">🟢 online</div>
+    <h2 class="cabecalho-texto">🛍️ COISAS TALVEZ UTEIS</h2>
+    <div class="status-online">🟢 POR MATEUS ARAUJO</div>
 </div>
 """
 st.markdown(html_cabecalho, unsafe_allow_html=True)
@@ -27,10 +27,8 @@ st.markdown(html_cabecalho, unsafe_allow_html=True)
 injetor_css_externo("style.css")
 
 # 2. Seu conteúdo do site com as classes limpas
-st.markdown('<h1 class="meu-titulo">COISAS TALVEZ UTEIS</h1>', unsafe_allow_html=True)
-st.markdown('<p class="meu-subtitulo">Por Matheus Araujo</p>', unsafe_allow_html=True)
-
-st.title("IA´s")
+st.markdown('<h1 class="meu-titulo">IA´S</h1>', unsafe_allow_html=True)
+st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 
