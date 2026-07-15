@@ -41,7 +41,7 @@
     gap: 6px;                  /* Cria um espaço de 6 pixels entre o emoji 🟢 e a palavra "online" */
 }
 
-.st.markdown {
+h1 {
    align-items: center;
 }
 
