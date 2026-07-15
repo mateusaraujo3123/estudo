@@ -44,7 +44,8 @@ with col2:
 with col3:
       st.link_button("LOVABLE", "https://www.remove.bg/pt-br/upload")
     
-st.button("sitesuteis")
+# Criando o botão com a classe "meu-botao-util"
+st.markdown('<a href="https://google.com" target="_blank" class="meu-botao-util">🌐 SITES ÚTEIS</a>', unsafe_allow_html=True)
 st.markdown('<p class="facilidade">Sites de Facilidade</p>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
