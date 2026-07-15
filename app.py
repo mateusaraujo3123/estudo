@@ -6,7 +6,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-st.title("Meu Primeiro Site em Python")
+st.title("IA´s")
 
 col1, col2, col3 = st.columns(3)
 
