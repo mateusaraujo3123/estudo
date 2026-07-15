@@ -41,6 +41,8 @@
     gap: 6px;                  /* Cria um espaço de 6 pixels entre o emoji 🟢 e a palavra "online" */
 }
 
+/* titulos da tela que separão por categoria cada parte*/
+
 .meu-titulo {
    text-align: center;
 }
