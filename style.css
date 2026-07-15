@@ -64,7 +64,7 @@
 }
 
 /* Estilo para os Botões */
-.meu-botao {
+div[data-testid="stLinkButton"] a {
     background-color: #5d158a;     /* Mesmo roxo do cabeçalho */
     color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
