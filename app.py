@@ -17,7 +17,7 @@ def injetor_css_externo(caminho_arquivo):
 # ==========================================
 html_cabecalho = """
 <div class="cabecalho-container">
-    <h2 class="cabecalho-texto"> COISAS TALVEZ UTEIS</h2>
+    <h2 class="cabecalho-texto"> COISAS TALVEZ ÚTEIS</h2>
     <div class="status-online">🟢 POR MATEUS ARAUJO</div>
 </div>
 """
