@@ -30,6 +30,7 @@ injetor_css_externo("style.css")
 st.markdown('<h1 class="meu-titulo">IA´S</h1>', unsafe_allow_html=True)
 st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allow_html=True)
 
+# mensagem de boas vindas estilo notificação
 st.toast("Bem Vindo")
 
 col1, col2, col3 = st.columns(3)
@@ -43,5 +44,5 @@ with col2:
 with col3:
       st.link_button("LOVABLE", "https://portmercado.streamlit.app/")
     
-st.markdown('<h1 class="Pagina">IA´S</h1>', unsafe_allow_html=True)
-st.markdown('<p class="meu-subtitulo">INTELIGÊNCIA ARTIFICIAL</p>', unsafe_allow_html=True)
+st.markdown('<h1 class="sitesuteis">Sites Úteis</h1>', unsafe_allow_html=True)
+st.markdown('<p class="facilidade">Sites de Facilidade</p>', unsafe_allow_html=True)
