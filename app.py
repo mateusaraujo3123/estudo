@@ -35,10 +35,11 @@ st.toast("Bem Vindo")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.link_button("CHAT GPT", "https://portmercado.streamlit.app/"):
-        
+       st.link_button("CHAT GPT", "https://portmercado.streamlit.app/")
+    
 with col2:
      st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/")
+    
 with col3:
       st.link_button("LOVABLE", "https://portmercado.streamlit.app/")
     
