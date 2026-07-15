@@ -63,24 +63,26 @@
     gap: 6px;
 }
 
-/* Estilo para os Botões */
+/* Captura TODOS os st.link_button da sua página */
 div[data-testid="stLinkButton"] a {
-    background-color: #5d158a;     /* Mesmo roxo do cabeçalho */
-    color: #ffffff;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;     /* Força o texto a ficar em maiúsculo */
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.2s;    /* Transição suave ao passar o mouse */
-    border: none;
-    width: 100%;                   /* Faz o bloco ocupar todo o espaço da coluna */
+    background-color: #5d158a !important; /* Roxo idêntica à imagem */
+    color: #ffffff !important;            /* Cor do texto branca */
+    border: none !important;              /* Remove as bordas cinzas padrão */
+    border-radius: 8px !important;        /* Cantos arredondados */
+    padding: 20px 10px !important;        /* Deixa o botão alto igual ao da imagem */
+    width: 100% !important;               /* Faz o botão preencher toda a coluna */
+    display: flex !important;
+    justify-content: center !important;   /* Centraliza o texto horizontalmente */
+    align-items: center !important;       /* Centraliza o texto verticalmente */
+    text-transform: uppercase;            /* Força texto em maiúsculo */
+    font-weight: bold !important;
+    text-decoration: none !important;     /* Remove sublinhado de link */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Efeito ao passar o mouse no botão */
-.meu-botao:hover {
-    background-color: #7925ab;     /* Roxo levemente mais claro */
+/* Efeito ao passar o mouse por cima do botão nativo */
+div[data-testid="stLinkButton"] a:hover {
+    background-color: #7925ab !important; /* Roxo mais claro ao passar o mouse */
+    color: #ffffff !important;
+    border: none !important;
 }
