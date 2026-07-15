@@ -37,6 +37,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     if st.link_button("CHAT GPT", "https://portmercado.streamlit.app/"):
        st.toast("Bem Vindo")
+        
 with col2:
     if st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/"):
 
