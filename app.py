@@ -42,7 +42,18 @@ with col2:
      st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/")
     
 with col3:
-      st.link_button("LOVABLE", "https://portmercado.streamlit.app/")
+      st.link_button("LOVABLE", "https://www.remove.bg/pt-br/upload")
     
 st.markdown('<h1 class="sitesuteis">Sites Úteis</h1>', unsafe_allow_html=True)
 st.markdown('<p class="facilidade">Sites de Facilidade</p>', unsafe_allow_html=True)
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+       st.link_button("CHAT GPT", "https://portmercado.streamlit.app/")
+    
+with col2:
+     st.link_button("GOOGLE AI", "https://portmercado.streamlit.app/")
+    
+with col3:
+      st.link_button("LOVABLE", "https://www.remove.bg/pt-br/upload")
