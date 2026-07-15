@@ -10,13 +10,13 @@
     max-width: 1200px;
 }
 
-/* Estilo para o Título Principal */
+/* Estilo para o Título Principal COISAS TALVEZ UTEIS */
 .meu-titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 45px;
-    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do texto. Se o computador do usuário não tiver 'Segoe UI', ele tentará usar Tahoma, depois Geneva, e assim por diante. */
+    font-size: 45px; /* tamanho da letra do título */
+    font-weight: italic; /* Deixa a letra em negrito. (estilo da fonte) italic pode ser usado */
     color: #A020F0; /* Verde Neon */
-    text-shadow: 0px 0px 10px rgba(109, 0, 117, 0.3);
+    text-shadow: 0px 0px 10px rgba(109, 0, 117, 0.3); /* Cor do Neon de traz --- rgba(0, 255, 136) codigo de cor ----- (0.3) intensidade */
     text-align: center;
     margin-top: 20px;
 }
