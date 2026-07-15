@@ -12,6 +12,17 @@ def injetor_css_externo(caminho_arquivo):
         # Envolve o texto do CSS puro dentro da tag <style> do HTML
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+# ==========================================
+# CÓDIGO DO CABEÇALHO (HTML + CSS)
+# ==========================================
+html_cabecalho = """
+<div class="cabecalho-container">
+    <h2 class="cabecalho-texto">🛍️ MERCADINHO Portal Da Vila</h2>
+    <div class="status-online">🟢 online</div>
+</div>
+"""
+st.markdown(html_cabecalho, unsafe_allow_html=True)
+
 # 1. Chama o injetor apontando para o seu arquivo de estilo separado
 injetor_css_externo("style.css")
 
