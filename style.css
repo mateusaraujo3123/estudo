@@ -53,29 +53,36 @@
 /* ==========================================================================
    3. BOTÕES NATIVOS DO STREAMLIT (st.link_button ou st.button)
    ========================================================================== */
-/* Remove travas do container nativo e centraliza o bloco do botão na coluna */
+/* NOVO: Força as próprias colunas do Streamlit a centralizarem tudo dentro delas */
+div[data-testid="column"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Centraliza horizontalmente o botão dentro da coluna */
+    justify-content: center !important;
+}
+
+/* Garante que a div do botão ocupe o espaço correto */
 div[data-testid="stLinkButton"], div[data-testid="stButton"] {
     display: flex !important;
-    justify-content: center !important; /* Força o alinhamento central dentro da coluna */
+    justify-content: center !important;
     width: 100% !important;
 }
 
 /* Força o estilo diretamente no botão/link real */
 div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
-    background-color: #550080 !important; /* Roxo ligeiramente mais escuro para os botões */
+    background-color: #550080 !important; /* Roxo do print */
     color: #ffffff !important;            
     border: none !important;              
-    border-radius: 12px !important;       /* Cantos bem arredondados idênticos ao print */
-    padding: 24px 0 !important;           /* Altura interna perfeita para os botões */
+    border-radius: 12px !important;       /* Cantos arredondados */
+    padding: 24px 0 !important;           /* Altura interna */
     
-    /* Configurações críticas de tamanho e centralização */
-    width: 320px !important;              /* Define a largura confortável para preencher espaço */
+    width: 320px !important;              /* Largura fixa ideal para o botão */
     max-width: 100% !important;           
-    margin: 0 auto !important;            /* NOVO: Força o navegador a dividir as margens laterais igualmente */
+    margin: 0 auto !important;            /* Equilibra as margens */
     
     display: flex !important;             
-    justify-content: center !important;   /* Centraliza o texto horizontalmente */
-    align-items: center !important;       /* Centraliza o texto verticalmente */
+    justify-content: center !important;   /* Centraliza o texto do botão horizontalmente */
+    align-items: center !important;       /* Centraliza o texto do botão verticalmente */
     text-transform: uppercase !important; 
     font-weight: bold !important;         
     text-decoration: none !important;     
@@ -86,7 +93,7 @@ div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
 
 /* EFEITO HOVER (PASSAR O MOUSE) */
 div[data-testid="stLinkButton"] a:hover, div[data-testid="stButton"] button:hover {
-    background-color: #7700b3 !important; /* Roxo acende ao passar o mouse */
+    background-color: #7700b3 !important; 
     color: #ffffff !important;            
     border: none !important;
     text-decoration: none !important;
