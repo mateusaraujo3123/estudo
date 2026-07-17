@@ -1,108 +1,58 @@
-/* ==========================================================================
-   1. CONFIGURAÇÃO DA PÁGINA (FUNDO DO SITE)
-   ========================================================================== */
-.stApp {
-    background-color: #0c0f19; 
-}
-
-/* ==========================================================================
-   2. CABEÇALHO ROXO (CONTAINER PRINCIPAL)
-   ========================================================================== */
-.cabecalho-container {
-    display: flex;             
-    justify-content: space-between; 
-    align-items: center;       
-    background-color: #660099; 
-    padding: 15px 25px;        
-    border-radius: 12px;       
-    margin-bottom: 25px;       
-}
-
-.cabecalho-texto {
-    color: #ffffff;            
-    font-family: 'Segoe UI', sans-serif; 
-    font-size: 22px;           
-    font-weight: bold;         
-    margin: 0;                 
-}
-
-.status-online {
-    background-color: #3b0061; 
-    color: #ffffff;            
-    font-family: 'Segoe UI', sans-serif; 
-    font-size: 13px;           
-    font-weight: bold;         
-    padding: 6px 18px;         
-    border-radius: 20px;       
-    display: flex;             
-    align-items: center;       
-    gap: 6px;                  
-}
-
-/* ALINHAMENTOS DE TEXTOS MEIO DA TELA */
-.meu-titulo, .meu-subtitulo, .facilidade {
-   text-align: center !important;
-   color: #ffffff !important;
-}
-
-/* Centraliza o link dos sites úteis horizontalmente */
-.sitesuteis-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.sitesuteis {
-    text-align: center;
-    color: #00ecff !important; 
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-/* ==========================================================================
-   3. BOTÕES NATIVOS DO STREAMLIT (CENTRALIZAÇÃO ABSOLUTA)
-   ========================================================================== */
-/* Remove qualquer trava ou margem padrão nos blocos nativos que seguram os botões */
-div[data-testid="column"],
-div[data-testid="stLinkButton"], 
-div[data-testid="stButton"],
-div[data-testid="element-container"] {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-}
-
-/* Estilização real, tamanho e centralização forçada do botão interno */
-div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
-    background-color: #550080 !important; 
-    color: #ffffff !important;            
-    border: none !important;              
-    border-radius: 12px !important;       
-    padding: 24px 0 !important;           
+# Injeção de CSS para recriar o cabeçalho e os botões roxos com o visual idêntico
+st.markdown("""
+    <style>
+    /* Cabeçalho principal */
+    .main-header {
+        background-color: #6A1B9A !important;
+        color: white !important;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .status-bd {
+        background-color: #2E7D32 !important;
+        color: white !important;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
     
-    /* Configuração Crítica de Tamanho e Centralização Horizontal Direta */
-    width: 320px !important;              
-    max-width: 100% !important;           
-    display: inline-flex !important;     /* Modificado para inline-flex para aceitar margem auto */
-    margin-left: auto !important;        /* Força centralização mesmo que o pai quebre */
-    margin-right: auto !important;       /* Força centralização mesmo que o pai quebre */
+    /* CONTAINER DOS BOTÕES COM ALINHAMENTO ORIGINAL */
+    .button-container {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
     
-    justify-content: center !important;   
-    align-items: center !important;       
-    text-transform: uppercase !important; 
-    font-weight: bold !important;         
-    text-decoration: none !important;     
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; 
-    transition: background-color 0.2s ease !important; 
-}
-
-/* EFEITO HOVER (PASSAR O MOUSE) */
-div[data-testid="stLinkButton"] a:hover, div[data-testid="stButton"] button:hover {
-    background-color: #7700b3 !important; 
-    color: #ffffff !important;            
-    border: none !important;
-    text-decoration: none !important;
-}
+    /* ESTILO DOS BOTÕES ROXOS GRANDES E PREENCHIDOS */
+    .purple-button {
+        flex: 1;
+        background-color: #4A148C !important;
+        color: white !important;
+        padding: 20px 0px;
+        text-align: center;
+        text-decoration: none !important;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 6px;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+        transition: background-color 0.2s ease;
+        display: block;
+    }
+    
+    .purple-button:link, .purple-button:visited, .purple-button:hover, .purple-button:active {
+        text-decoration: none !important;
+        color: white !important;
+    }
+    
+    .purple-button:hover {
+        background-color: #6A1B9A !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
