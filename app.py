@@ -11,6 +11,14 @@ st.set_page_config(
     layout="wide"
 )
 
+# 1. Função para carregar o CSS local
+def load_css(file_name):
+    with open(file_name, "r", encoding="utf-8") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# 2. Executa a função passando o seu arquivo
+load_css("style.css")
+
 # Cabeçalho Principal (Idêntico ao seu print original)
 st.markdown("""
     <div class="main-header">
