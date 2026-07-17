@@ -1,83 +1,104 @@
-/* ==========================================================================
-   1. CONFIGURAÇÃO DA PÁGINA (FUNDO DO SITE)
-   ========================================================================== */
-.stApp {
-    background-color: #0c0f19; /* Fundo escuro idêntico ao print */
-}
+import streamlit as st
 
-/* ==========================================================================
-   2. CABEÇALHO ROXO (CONTAINER PRINCIPAL)
-   ========================================================================== */
-.cabecalho-container {
-    display: flex;             
-    justify-content: space-between; 
-    align-items: center;       
-    background-color: #660099; /* NOVO: Roxo vibrante do seu novo print */
-    padding: 15px 25px;        
-    border-radius: 12px;       /* Bordas mais arredondadas como na imagem */
-    margin-bottom: 25px;       
-}
+# Configuração da página para remover margens nativas excessivas
+st.set_page_config(layout="wide")
 
-/* TEXTO DENTRO DO CABEÇALHO */
-.cabecalho-texto {
-    color: #ffffff;            
-    font-family: 'Segoe UI', sans-serif; 
-    font-size: 22px;           
-    font-weight: bold;         
-    margin: 0;                 
-}
+# 1. Carregar e injetar o código CSS corrigido
+st.markdown(
+    """
+    <style>
+    /* 1. CONFIGURAÇÃO DA PÁGINA (FUNDO DO SITE) */
+    .stApp {
+        background-color: #0c0f19;
+    }
 
-/* PÍLULA VERDE (STATUS ONLINE) */
-.status-online {
-    background-color: #3b0061; /* Roxo ultra escuro para o fundo da pílula */
-    color: #ffffff;            
-    font-family: 'Segoe UI', sans-serif; 
-    font-size: 13px;           
-    font-weight: bold;         
-    padding: 6px 18px;         
-    border-radius: 20px;       
-    display: flex;             
-    align-items: center;       
-    gap: 6px;                  
-}
+    /* 2. CABEÇALHO ROXO (CONTAINER PRINCIPAL) */
+    .cabecalho-container {
+        display: flex;             
+        justify-content: space-between; 
+        align-items: center;       
+        background-color: #660099;
+        padding: 15px 25px;        
+        border-radius: 12px;       
+        margin-bottom: 25px;       
+    }
 
-/* ALINHAMENTOS DE TEXTOS */
-.meu-titulo, .meu-subtitulo, .sitesuteis, .facilidade {
-   text-align: center;
-   color: #ffffff;
-}
+    .cabecalho-texto {
+        color: #ffffff;            
+        font-family: 'Segoe UI', sans-serif; 
+        font-size: 22px;           
+        font-weight: bold;         
+        margin: 0;                 
+    }
 
-/* ==========================================================================
-   3. BOTÕES NATIVOS DO STREAMLIT (st.link_button ou st.button)
-   ========================================================================== */
-/* Remove qualquer estilização padrão do container do Streamlit */
-div[data-testid="stLinkButton"], div[data-testid="stButton"] {
-    width: 100% !important;
-}
+    .status-online {
+        background-color: #440066; /* Tom ideal para destacar a pílula verde */
+        color: #ffffff;            
+        font-family: 'Segoe UI', sans-serif; 
+        font-size: 14px;           
+        font-weight: bold;         
+        padding: 6px 18px;         
+        border-radius: 20px;       
+        display: flex;             
+        align-items: center;       
+        gap: 8px;                  
+    }
 
-/* Força o estilo diretamente no botão/link real */
-div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
-    background-color: #550080 !important; /* Roxo ligeiramente mais escuro para os botões */
-    color: #ffffff !important;            
-    border: none !important;              
-    border-radius: 12px !important;       /* Cantos bem arredondados idênticos ao print */
-    padding: 24px 0 !important;           /* Altura interna perfeita para os botões */
-    width: 100% !important;               /* Ocupa 100% da coluna (removido os 450px fixos) */
-    display: flex !important;             
-    justify-content: center !important;   
-    align-items: center !important;       
-    text-transform: uppercase !important; 
-    font-weight: bold !important;         
-    text-decoration: none !important;     
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; 
-    transition: background-color 0.2s ease !important; 
-}
+    /* 3. BOTÕES NATIVOS DO STREAMLIT */
+    div[data-testid="stLinkButton"], div[data-testid="stButton"] {
+        width: 100% !important;
+    }
 
-/* EFEITO HOVER (PASSAR O MOUSE) */
-div[data-testid="stLinkButton"] a:hover, div[data-testid="stButton"] button:hover {
-    background-color: #7700b3 !important; /* Roxo acende ao passar o mouse */
-    color: #ffffff !important;            
-    border: none !important;
-    text-decoration: none !important;
-}
+    div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
+        background-color: #4b006e !important; /* Roxo ajustado para bater com a imagem */
+        color: #ffffff !important;            
+        border: none !important;              
+        border-radius: 12px !important;       
+        padding: 24px 0 !important;           
+        width: 100% !important;               
+        display: flex !important;             
+        justify-content: center !important;   
+        align-items: center !important;       
+        text-transform: uppercase !important; 
+        font-weight: bold !important;         
+        text-decoration: none !important;     
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; 
+        transition: background-color 0.2s ease !important; 
+    }
+
+    div[data-testid="stLinkButton"] a:hover, div[data-testid="stButton"] button:hover {
+        background-color: #660099 !important; /* Brilha no mesmo tom do cabeçalho */
+        color: #ffffff !important;            
+        border: none !important;
+        text-decoration: none !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# 2. Renderização do Cabeçalho usando as classes do CSS
+st.markdown(
+    """
+    <div class="cabecalho-container">
+        <h2 class="cabecalho-texto">🛍️ MERCADINHO Portal Da Vila</h2>
+        <div class="status-online">
+            <span style="color: #22c55e;">🟢</span> online
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# 3. Criação da grade de 3 colunas perfeitas e responsivas
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.link_button("💵 Fiados", "https://seu-link-aqui.com")
+
+with col2:
+    st.link_button("📦 Preços", "https://seu-link-aqui.com")
+
+with col3:
+    st.link_button("📜 Contas a Receber", "https://seu-link-aqui.com")
