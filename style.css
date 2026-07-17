@@ -64,21 +64,21 @@
    ========================================================================== */
 /* Aplica o estilo diretamente na tag <a> gerada pelo st.link_button */
 div[data-testid="stLinkButton"] a {
-    background-color: #000287 !important; /* Força a cor roxa idêntica ao cabeçalho nos botões */
-    color: #ffffff !important;            /* Força a cor do texto de dentro do botão a ser branca */
-    border: none !important;              /* Remove completamente a borda cinza padrão do Streamlit */
-    border-radius: 8px !important;        /* Deixa os cantos dos botões levemente arredondados */
-    padding: 20px 0px !important;        /* Aumenta a altura interna do botão para ficar igual à imagem */
-    width: 100% !important;               /* Faz o botão preencher 100% da largura da coluna do Streamlit */
-    display: flex !important;             /* Ativa flexbox no botão para controlar a posição do texto */
-    justify-content: center !important;   /* Centraliza o texto do botão horizontalmente */
-    align-items: center !important;       /* Centraliza o texto do botão verticalmente */
-    text-transform: uppercase !important; /* Transforma automaticamente todo o texto em letras MAIÚSCULAS */
-    font-weight: bold !important;         /* Deixa o texto de dentro do botão em negrito */
-    text-decoration: none !important;     /* Remove o sublinhado de link padrão que o HTML coloca */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra preta sutil embaixo do botão */
+    background-color: #000287 !important; /* Força a cor roxa idêntica ao cabeçalho */
+    color: #ffffff !important;            /* Força a cor do texto branca */
+    border: none !important;              /* Remove a borda padrão do Streamlit */
+    border-radius: 8px !important;        /* Cantos arredondados */
+    padding: 20px 0 !important;           /* 20px em cima/baixo e ZERO fixo nos lados */
+    width: 100% !important;               /* Ocupa toda a largura da coluna perfeitamente */
+    display: flex !important;             /* Ativa o flexbox */
+    justify-content: center !important;   /* Alinha o texto exatamente no centro horizontal */
+    align-items: center !important;       /* Alinha o texto exatamente no centro vertical */
+    text-transform: uppercase !important; /* Texto em letras MAIÚSCULAS */
+    font-weight: bold !important;         /* Texto em negrito */
+    text-decoration: none !important;     /* Remove sublinhado de link */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra embaixo do botão */
     gap: 6px;
-    transition: background-color 0.2s ease !important; /* Faz a troca de cor ao passar o mouse ser suave */
+    transition: background-color 0.2s ease !important; /* Transição suave */
 }
 
 /* EFEITO AO PASSAR O MOUSE (HOVER) NOS BOTÕES NATIVOS */
