@@ -6,6 +6,9 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# 1. Chama o injetor apontando para o seu arquivo de estilo separado
+injetor_css_externo("style.css")
+
 def injetor_css_externo(caminho_arquivo):
     """Lê um arquivo .css puramente textual e injeta no Streamlit"""
     with open(caminho_arquivo, "r", encoding="utf-8") as f:
@@ -22,9 +25,6 @@ html_cabecalho = """
 </div>
 """
 st.markdown(html_cabecalho, unsafe_allow_html=True)
-
-# 1. Chama o injetor apontando para o seu arquivo de estilo separado
-injetor_css_externo("style.css")
 
 # 2. Seu conteúdo do site com as classes limpas
 st.markdown('<h1 class="meu-titulo">IA´S</h1>', unsafe_allow_html=True)
