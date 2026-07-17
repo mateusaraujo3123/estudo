@@ -2,7 +2,7 @@
    1. CONFIGURAÇÃO DA PÁGINA (FUNDO DO SITE)
    ========================================================================== */
 .stApp {
-    background-color: #0c0f19; /* Fundo escuro idêntico ao print */
+    background-color: #0c0f19; 
 }
 
 /* ==========================================================================
@@ -12,13 +12,12 @@
     display: flex;             
     justify-content: space-between; 
     align-items: center;       
-    background-color: #660099; /* NOVO: Roxo vibrante do seu novo print */
+    background-color: #660099; 
     padding: 15px 25px;        
-    border-radius: 12px;       /* Bordas mais arredondadas como na imagem */
+    border-radius: 12px;       
     margin-bottom: 25px;       
 }
 
-/* TEXTO DENTRO DO CABEÇALHO */
 .cabecalho-texto {
     color: #ffffff;            
     font-family: 'Segoe UI', sans-serif; 
@@ -27,9 +26,8 @@
     margin: 0;                 
 }
 
-/* PÍLULA VERDE (STATUS ONLINE) */
 .status-online {
-    background-color: #3b0061; /* Roxo ultra escuro para o fundo da pílula */
+    background-color: #3b0061; 
     color: #ffffff;            
     font-family: 'Segoe UI', sans-serif; 
     font-size: 13px;           
@@ -41,48 +39,58 @@
     gap: 6px;                  
 }
 
-/* ALINHAMENTOS DE TEXTOS */
-.meu-titulo, .meu-subtitulo, .sitesuteis, .facilidade {
-   text-align: center;
-   color: #ffffff;
+/* ALINHAMENTOS DE TEXTOS MEIO DA TELA */
+.meu-titulo, .meu-subtitulo, .facilidade {
+   text-align: center !important;
+   color: #ffffff !important;
+}
+
+/* Centraliza o link dos sites úteis horizontalmente */
+.sitesuteis-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sitesuteis {
+    text-align: center;
+    color: #00ecff !important; 
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* ==========================================================================
-   3. BOTÕES NATIVOS DO STREAMLIT (st.link_button ou st.button)
+   3. BOTÕES NATIVOS DO STREAMLIT (CENTRALIZAÇÃO ABSOLUTA)
    ========================================================================== */
-/* ==========================================================================
-   3. BOTÕES NATIVOS DO STREAMLIT (st.link_button ou st.button)
-   ========================================================================== */
-/* NOVO: Força as próprias colunas do Streamlit a centralizarem tudo dentro delas */
-div[data-testid="column"] {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important; /* Centraliza horizontalmente o botão dentro da coluna */
-    justify-content: center !important;
-}
-
-/* Garante que a div do botão ocupe o espaço correto */
-div[data-testid="stLinkButton"], div[data-testid="stButton"] {
+/* Remove qualquer trava ou margem padrão nos blocos nativos que seguram os botões */
+div[data-testid="column"],
+div[data-testid="stLinkButton"], 
+div[data-testid="stButton"],
+div[data-testid="element-container"] {
     display: flex !important;
     justify-content: center !important;
+    align-items: center !important;
     width: 100% !important;
 }
 
-/* Força o estilo diretamente no botão/link real */
+/* Estilização real, tamanho e centralização forçada do botão interno */
 div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
-    background-color: #550080 !important; /* Roxo do print */
+    background-color: #550080 !important; 
     color: #ffffff !important;            
     border: none !important;              
-    border-radius: 12px !important;       /* Cantos arredondados */
-    padding: 24px 0 !important;           /* Altura interna */
+    border-radius: 12px !important;       
+    padding: 24px 0 !important;           
     
-    width: 320px !important;              /* Largura fixa ideal para o botão */
+    /* Configuração Crítica de Tamanho e Centralização Horizontal Direta */
+    width: 320px !important;              
     max-width: 100% !important;           
-    margin: 0 auto !important;            /* Equilibra as margens */
+    display: inline-flex !important;     /* Modificado para inline-flex para aceitar margem auto */
+    margin-left: auto !important;        /* Força centralização mesmo que o pai quebre */
+    margin-right: auto !important;       /* Força centralização mesmo que o pai quebre */
     
-    display: flex !important;             
-    justify-content: center !important;   /* Centraliza o texto do botão horizontalmente */
-    align-items: center !important;       /* Centraliza o texto do botão verticalmente */
+    justify-content: center !important;   
+    align-items: center !important;       
     text-transform: uppercase !important; 
     font-weight: bold !important;         
     text-decoration: none !important;     
