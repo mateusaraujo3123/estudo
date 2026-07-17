@@ -69,7 +69,7 @@ div[data-testid="stLinkButton"] a {
     border: none !important;              /* Remove completamente a borda cinza padrão do Streamlit */
     border-radius: 8px !important;        /* Deixa os cantos dos botões levemente arredondados */
     padding: 20px 10px !important;        /* Aumenta a altura interna do botão para ficar igual à imagem */
-    width: 500px !important;               /* Faz o botão preencher 100% da largura da coluna do Streamlit */
+    width: 100% !important;               /* Faz o botão preencher 100% da largura da coluna do Streamlit */
     display: flex !important;             /* Ativa flexbox no botão para controlar a posição do texto */
     justify-content: center !important;   /* Centraliza o texto do botão horizontalmente */
     align-items: center !important;       /* Centraliza o texto do botão verticalmente */
