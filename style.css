@@ -69,7 +69,7 @@ div[data-testid="stLinkButton"] a {
     border: none !important;              /* Remove a borda padrão do Streamlit */
     border-radius: 8px !important;        /* Cantos arredondados */
     padding: 20px 0 !important;           /* 20px em cima/baixo e ZERO fixo nos lados */
-    width: 500px !important;               /* Ocupa toda a largura da coluna perfeitamente */
+    width: 450px !important;               /* Ocupa toda a largura da coluna perfeitamente */
     display: flex !important;             /* Ativa o flexbox */
     justify-content: center !important;   /* Alinha o texto exatamente no centro horizontal */
     align-items: center !important;       /* Alinha o texto exatamente no centro vertical */
