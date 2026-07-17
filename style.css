@@ -50,27 +50,25 @@
 /* ==========================================================================
    3. BOTÕES NATIVOS DO STREAMLIT (st.link_button ou st.button)
    ========================================================================== */
-/* Remove qualquer estilização padrão do container do Streamlit */
-/* ==========================================================================
-   3. BOTÕES NATIVOS DO STREAMLIT (st.link_button ou st.button)
-   ========================================================================== */
-/* Força TODOS os containers nativos do botão a ocuparem 100% da coluna */
-div[data-testid="stLinkButton"], 
-div[data-testid="stButton"],
-div[data-testid="stHorizontalBlock"] div[data-testid="element-container"],
-div[data-testid="stVerticalBlock"] div[data-testid="element-container"] {
+/* Centraliza a div que segura o botão dentro da coluna do Streamlit */
+div[data-testid="stLinkButton"], div[data-testid="stButton"] {
+    display: flex !important;
+    justify-content: center !important;
     width: 100% !important;
-    display: block !important;
 }
 
-/* Força o estilo diretamente no botão/link real */
+/* Define um tamanho fixo grande para os botões esticarem horizontalmente */
 div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
-    background-color: #550080 !important; /* Roxo ligeiramente mais escuro para os botões */
+    background-color: #550080 !important; /* Roxo do print */
     color: #ffffff !important;            
     border: none !important;              
-    border-radius: 12px !important;       /* Cantos bem arredondados idênticos ao print */
-    padding: 24px 0 !important;           /* Altura interna perfeita para os botões */
-    width: 100% !important;               /* Ocupa 100% da coluna real */
+    border-radius: 12px !important;       /* Cantos arredondados do print */
+    padding: 24px 0 !important;           /* Altura interna perfeita */
+    
+    /* MUDANÇA AQUI: Define largura fixa controlada para simular o layout do print */
+    width: 320px !important;              
+    max-width: 100% !important;           /* Evita que o botão quebre em telas de celular */
+    
     display: flex !important;             
     justify-content: center !important;   
     align-items: center !important;       
@@ -84,16 +82,7 @@ div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
 
 /* EFEITO HOVER (PASSAR O MOUSE) */
 div[data-testid="stLinkButton"] a:hover, div[data-testid="stButton"] button:hover {
-    background-color: #7700b3 !important; /* Roxo acende ao passar o mouse */
-    color: #ffffff !important;            
-    border: none !important;
-    text-decoration: none !important;
-}
-
-
-/* EFEITO HOVER (PASSAR O MOUSE) */
-div[data-testid="stLinkButton"] a:hover, div[data-testid="stButton"] button:hover {
-    background-color: #7700b3 !important; /* Roxo acende ao passar o mouse */
+    background-color: #7700b3 !important; 
     color: #ffffff !important;            
     border: none !important;
     text-decoration: none !important;
