@@ -2,89 +2,82 @@
    1. CONFIGURAÇÃO DA PÁGINA (FUNDO DO SITE)
    ========================================================================== */
 .stApp {
-    background-color: #0c0f19; /* Define a cor de fundo de todo o site (azul escuro/preto) */
+    background-color: #0c0f19; /* Fundo escuro idêntico ao print */
 }
 
 /* ==========================================================================
    2. CABEÇALHO ROXO (CONTAINER PRINCIPAL)
    ========================================================================== */
 .cabecalho-container {
-    display: flex;             /* Ativa o modo Flexbox para alinhar elementos lado a lado */
-    justify-content: space-between; /* Empurra o título para a esquerda e o status online para a direita */
-    align-items: center;       /* Centraliza verticalmente o título e o status no meio da barra */
-    background-color: #000287; /* Define a cor roxa idêntica à da imagem do seu projeto */
-    padding: 15px 25px;        /* Cria um espaçamento interno (15px cima/baixo, 25px lados) */
-    border-radius: 10px;       /* Deixa os 4 cantos da barra roxa arredondados */
-    margin-bottom: 10px;       /* Cria uma margem de espaço vazia abaixo da barra roxa */
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    background-color: #660099; /* NOVO: Roxo vibrante do seu novo print */
+    padding: 15px 25px;        
+    border-radius: 12px;       /* Bordas mais arredondadas como na imagem */
+    margin-bottom: 25px;       
 }
 
 /* TEXTO DENTRO DO CABEÇALHO */
 .cabecalho-texto {
-    color: #ffffff;            /* Define a cor do texto do título como branca */
-    font-family: 'Segoe UI', sans-serif; /* Aplica uma fonte moderna e limpa ao título */
-    font-size: 22px;           /* Define o tamanho exato da letra do título */
-    font-weight: bold;         /* Deixa o texto do título em negrito */
-    margin: 0;                 /* Remove margens padrão que o navegador adiciona ao h2 */
+    color: #ffffff;            
+    font-family: 'Segoe UI', sans-serif; 
+    font-size: 22px;           
+    font-weight: bold;         
+    margin: 0;                 
 }
 
-/* PILULA VERDE (STATUS ONLINE) */
+/* PÍLULA VERDE (STATUS ONLINE) */
 .status-online {
-    background-color: #00012E; /* Define a cor de fundo */
-    color: #ffffff;            /* Define a cor do texto "online" como branca */
-    font-family: 'Segoe UI', sans-serif; /* Define a fonte do texto do status */
-    font-size: 13px;           /* Tamanho de letra ligeiramente menor para o status */
-    font-weight: bold;         /* Deixa o texto "online" em negrito */
-    padding: 6px 16px;         /* Espaçamento interno para dar formato de botão (6px vertical, 16px horizontal) */
-    border-radius: 20px;       /* Deixa as bordas totalmente arredondadas em formato de pílula */
-    display: flex;             /* Ativa flexbox interno para o emoji e o texto ficarem alinhados */
-    align-items: center;       /* Centraliza o emoji e o texto horizontalmente na mesma linha */
-    gap: 6px;                  /* Cria um espaço de 6 pixels entre o emoji 🟢 e a palavra "online" */
+    background-color: #3b0061; /* Roxo ultra escuro para o fundo da pílula */
+    color: #ffffff;            
+    font-family: 'Segoe UI', sans-serif; 
+    font-size: 13px;           
+    font-weight: bold;         
+    padding: 6px 18px;         
+    border-radius: 20px;       
+    display: flex;             
+    align-items: center;       
+    gap: 6px;                  
 }
 
-/* titulos da tela que separão por categoria cada parte*/
-
-.meu-titulo {
+/* ALINHAMENTOS DE TEXTOS */
+.meu-titulo, .meu-subtitulo, .sitesuteis, .facilidade {
    text-align: center;
-}
-
-.meu-subtitulo {
-   text-align: center;
-}
-
-.sitesuteis {
-   text-align: center;
-}
-
-.facilidade {
-   text-align: center;
+   color: #ffffff;
 }
 
 /* ==========================================================================
-   3. BOTÕES NATIVOS DO STREAMLIT (st.link_button)
+   3. BOTÕES NATIVOS DO STREAMLIT (st.link_button ou st.button)
    ========================================================================== */
-/* Aplica o estilo diretamente na tag <a> gerada pelo st.link_button */
-div[data-testid="stLinkButton"] a {
-    background-color: #000287 !important; /* Força a cor roxa idêntica ao cabeçalho */
-    color: #ffffff !important;            /* Força a cor do texto branca */
-    border: none !important;              /* Remove a borda padrão do Streamlit */
-    border-radius: 8px !important;        /* Cantos arredondados */
-    padding: 20px 0 !important;           /* 20px em cima/baixo e ZERO fixo nos lados */
-    width: 450px !important;               /* Ocupa toda a largura da coluna perfeitamente */
-    display: flex !important;             /* Ativa o flexbox */
-    justify-content: center !important;   /* Alinha o texto exatamente no centro horizontal */
-    align-items: center !important;       /* Alinha o texto exatamente no centro vertical */
-    text-transform: uppercase !important; /* Texto em letras MAIÚSCULAS */
-    font-weight: bold !important;         /* Texto em negrito */
-    text-decoration: none !important;     /* Remove sublinhado de link */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra embaixo do botão */
-    gap: 6px;
-    transition: background-color 0.2s ease !important; /* Transição suave */
+/* Remove qualquer estilização padrão do container do Streamlit */
+div[data-testid="stLinkButton"], div[data-testid="stButton"] {
+    width: 100% !important;
 }
 
-/* EFEITO AO PASSAR O MOUSE (HOVER) NOS BOTÕES NATIVOS */
-div[data-testid="stLinkButton"] a:hover {
-    background-color: #7925ab !important; /* Altera o fundo para um roxo mais claro quando o mouse está em cima */
-    color: #ffffff !important;            /* Garante que o texto continue branco no hover */
-    border: none !important;              /* Garante que nenhuma borda apareça no hover */
-    text-decoration: none !important;     /* Garante que nenhum sublinhado apareça no hover */
+/* Força o estilo diretamente no botão/link real */
+div[data-testid="stLinkButton"] a, div[data-testid="stButton"] button {
+    background-color: #550080 !important; /* Roxo ligeiramente mais escuro para os botões */
+    color: #ffffff !important;            
+    border: none !important;              
+    border-radius: 12px !important;       /* Cantos bem arredondados idênticos ao print */
+    padding: 24px 0 !important;           /* Altura interna perfeita para os botões */
+    width: 100% !important;               /* Ocupa 100% da coluna (removido os 450px fixos) */
+    display: flex !important;             
+    justify-content: center !important;   
+    align-items: center !important;       
+    text-transform: uppercase !important; 
+    font-weight: bold !important;         
+    text-decoration: none !important;     
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; 
+    transition: background-color 0.2s ease !important; 
+}
+
+/* EFEITO HOVER (PASSAR O MOUSE) */
+div[data-testid="stLinkButton"] a:hover, div[data-testid="stButton"] button:hover {
+    background-color: #7700b3 !important; /* Roxo acende ao passar o mouse */
+    color: #ffffff !important;            
+    border: none !important;
+    text-decoration: none !important;
 }
