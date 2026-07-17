@@ -6,7 +6,16 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# 1. Chama o injetor apontando para o seu arquivo de estilo separado
+def injetor_css_externo(nome_arquivo):
+    """Descobre o caminho correto da pasta e injeta o CSS com segurança"""
+    # Descobre em qual pasta o script app.py está guardado no servidor
+    diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+    caminho_completo = os.path.join(diretorio_atual, nome_arquivo)
+    
+    with open(caminho_completo, "r", encoding="utf-8") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# CORREÇÃO DEFINITIVA: Agora ele vai achar o style.css em qualquer lugar
 injetor_css_externo("style.css")
 
 def injetor_css_externo(caminho_arquivo):
