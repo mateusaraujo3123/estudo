@@ -3,7 +3,7 @@ import streamlit as st
 with open("style.css") as css:
     st.markdown(
         f"<style>{css.read()}</style>",
-        ynsafe_allow_html=True
+        unsafe_allow_html=True
     )
 
 st.title("Coisas úteis")
