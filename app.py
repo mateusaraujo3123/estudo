@@ -5,10 +5,10 @@ st.title("IA´s")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.link_button("vefndas", "https://www.magnific.com/premium-psd/young-woman-holding-car-keys-isolated-chroma-key-background-with-shocked-facial-expression_381046474.htm#fromView=search&page=1&position=16&uuid=1b9d5fef-2d1b-43cd-bf68-02aca95e739d&query=veiculo+mulher+segurando+chave")
+    st.link_button("CHAT GPT", "https://chatgpt.com/")
 
 with col2:
-    st.button("vendas", "vendasss")
+    st.button("GOOGLE AI", "https://GOOGLE.COM")
 
 with col3:
-    st.button("vesndas", "vendasssdsfds")
+    st.button("LOVABLE", "https://lovable.dev/pt-br?utm_device=c&utm_source=google&utm_medium=paid_search_branded&utm_campaign=google-br-b2c-prospecting-evergreen-subscription-XB+-+Search+-+Lovable+-+CORE&campaignid=23350529747&gad_source=1&gad_campaignid=23350529747&gbraid=0AAAAA-iIxGcUPCFng6ocrYslRjYB7UTL6&gclid=EAIaIQobChMIhteW5qfclQMVpV9IAB0hNTJtEAAYASAAEgKepfD_BwE")
