@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("IA´s")
+st.button("IA´s")
 
 col1, col2, col3 = st.columns(3)
 
