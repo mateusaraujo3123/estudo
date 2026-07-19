@@ -10,3 +10,13 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+
+/* regra para o site se adaptar a celulares, manter SEMPRE no final do css */
+@media (max-width: 768px){
+
+    .botoes{
+        font-size: 11px;
+        padding: 6px 14px;
+    }
+
+}
