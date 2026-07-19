@@ -16,7 +16,7 @@ st.markdown("""
 <h1 class="titulo">Coisas úteis</h1>
 """, unsafe_allow_html=True)
 
-st.link_button("👥 IA's", "/ias", use_container_width=False)
+st.page_link("pages/ias.py", label="👥 IA's")
 
 st.markdown("""
    <div class="button-container">
