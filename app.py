@@ -23,6 +23,6 @@ def home():
     """, unsafe_allow_html=True)
 
 home_page = st.Page(home, title="Home")
-ias = st.Page("pages/1_ias.py", title="IA's")
+ias = st.Page("pages/ias.py", title="IA's")
 
 st.navigation([home_page, ias], position="hidden").run()
