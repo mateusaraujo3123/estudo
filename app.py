@@ -16,7 +16,7 @@ st.markdown("""
 <h1 class="titulo">Coisas úteis</h1>
 """, unsafe_allow_html=True)
 
-if st.button("👥 IA's", key="btn_ias_unico"):
+st.link_button("👥 IA's", "/ias", use_container_width=False)
     st.switch_page("pages/ias.py")
 
 st.markdown("""
