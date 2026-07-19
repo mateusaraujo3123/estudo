@@ -6,6 +6,12 @@ with open("style.css") as css:
         unsafe_allow_html=True
     )
 
+st.set_page_config(
+    page_title="Coisas úteis",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
+
 st.title("Coisas úteis")
 
 st.button("IA´s")
