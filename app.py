@@ -1,16 +1,16 @@
 import streamlit as st
 
-with open("style.css") as css:
-    st.markdown(
-        f"<style>{css.read()}</style>",
-        unsafe_allow_html=True
-    )
-
 st.set_page_config(
     page_title="Coisas úteis",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+with open("style.css") as css:
+    st.markdown(
+        f"<style>{css.read()}</style>",
+        unsafe_allow_html=True
+    )
 
 st.title("Coisas úteis")
 
