@@ -5,6 +5,10 @@
     gap: 20px;
 }
 
+.titulos
+    text-align: center;
+}
+
 .botoes{
     background: #2f80ed;
     color: white !important;
