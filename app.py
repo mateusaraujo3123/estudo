@@ -10,25 +10,10 @@ st.title("Coisas úteis")
 
 st.button("IA´s")
 
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.markdown("""
-    <a href="https://chatgpt.com/" class="botoes">
-      chatgpt
-    </a>
-    """, unsafe_allow_html=True)
-    
-with col2:
-    st.markdown("""
-    <a href="https://GOOGLE.COM" class="botoes">
-      GOOGLE AI
-    </a>
-    """, unsafe_allow_html=True)
-    
-with col3:
-    st.markdown("""
-    <a href="https://lovable.dev/" class="botoes">
-      LOVABLE
-    </a>
-    """, unsafe_allow_html=True)
+st.markdown("""
+   <div class="button-container">
+    <a href="https://chatgpt.com/" class="botoes">chatgpt</a>
+    <a href="https://GOOGLE.COM" class="botoes">GOOGLE AI</a>
+    <a href="https://lovable.dev/" class="botoes">LOVABLE</a>
+   </div>
+""", unsafe_allow_html=True)
