@@ -20,7 +20,15 @@ with col1:
     """, unsafe_allow_html=True)
     
 with col2:
-    st.link_button("GOOGLE AI", "https://GOOGLE.COM")
-
+    st.markdown("""
+    <a href="https://GOOGLE.COM" class="botoes">
+      GOOGLE AI
+    </a>
+    """, unsafe_allow_html=True)
+    
 with col3:
-    st.link_button("LOVABLE", "https://lovable.dev/")
+    st.markdown("""
+    <a href="https://lovable.dev/" class="botoes">
+      LOVABLE
+    </a>
+    """, unsafe_allow_html=True)
