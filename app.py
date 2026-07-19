@@ -18,8 +18,8 @@ st.markdown("""
 
 col1 = st.columns(13)
 
-st.button("👥 IA's", key="btn_ias")
-    st.switch_page("pages/ias.py") [2]
+if st.button("👥 IA's", key="btn_ias_unico"):
+    st.switch_page("pages/ias.py")
 
 st.markdown("""
    <div class="button-container">
