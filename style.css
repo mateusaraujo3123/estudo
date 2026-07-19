@@ -10,6 +10,8 @@
 }
 
 .stPageLink a{
+    display: flex;
+    justify-content: center;
     background: #2f80ed;
     color: white !important;
     border: none;
