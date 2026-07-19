@@ -18,7 +18,7 @@ st.markdown("""
 
 col1 = st.columns(13)
 
-st.button("👥 IA's", key="btn_ias"):
+st.button("👥 IA's", key="btn_ias")
     st.switch_page("pages/ias.py") [2]
 
 st.markdown("""
