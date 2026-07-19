@@ -17,7 +17,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.link_button("👥 IA's", "/ias", use_container_width=False)
-    st.switch_page("pages/ias.py")
 
 st.markdown("""
    <div class="button-container">
