@@ -18,7 +18,7 @@ st.markdown("""
 
 st.markdown("""
     <div class="button-container">
-        <a href="/ias" target="_self" class="categorias">👥 IA`s</a>
+        <a href="/~/~/pages/ias" target="_self" class="categorias">👥 IA's</a>
     </div>
 """, unsafe_allow_html=True)
 
