@@ -14,17 +14,15 @@ def home():
 
     st.page_link(ias, label="👥 IA's")
 
-    st.markdown("""
-    <div class="button-container">
-        <a href="https://chatgpt.com/" class="botoes" target="_blank">ChatGPT</a>
-        <a href="https://google.com/" class="botoes" target="_blank">Google AI</a>
-        <a href="https://lovable.dev/" class="botoes" target="_blank">Lovable</a>
-    </div>
-    """, unsafe_allow_html=True)
-    
 home_page = st.Page(home, title="Home")
 ias = st.Page("pages/ias.py", title="IA's")
 
 st.navigation([home_page, ias], position="hidden").run()
 
-
+st.markdown("""
+    <div class="button-container">
+        <a href="https://chatgpt.com/" class="botoes" target="_blank">ChatGPT</a>
+        <a href="https://google.com/" class="botoes" target="_blank">Google AI</a>
+        <a href="https://lovable.dev/" class="botoes" target="_blank">Lovable</a>
+    </div>
+""", unsafe_allow_html=True)
