@@ -12,7 +12,9 @@ with open("style.css") as css:
         unsafe_allow_html=True
     )
 
-st.title("Coisas úteis")
+st.markdown("""
+<h1 class="titulo">Coisas úteis</h1>
+""", unsafe_allow_html=True)
 
 st.button("IA´s")
 
