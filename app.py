@@ -16,11 +16,7 @@ st.markdown("""
 <h1 class="titulo">Coisas úteis</h1>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-    <div class="button-container">
-        <a href="/~/~/pages/ias" target="_self" class="categorias">👥 IA's</a>
-    </div>
-""", unsafe_allow_html=True)
+st.page_link("pages/ias.py", label="👥 IA's")
 
 st.markdown("""
    <div class="button-container">
