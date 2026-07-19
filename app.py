@@ -16,8 +16,6 @@ st.markdown("""
 <h1 class="titulo">Coisas úteis</h1>
 """, unsafe_allow_html=True)
 
-col1 = st.columns(13)
-
 if st.button("👥 IA's", key="btn_ias_unico"):
     st.switch_page("pages/ias.py")
 
