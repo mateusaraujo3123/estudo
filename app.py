@@ -29,11 +29,15 @@ def botoes_ias():
 
 # ================= HOME =================
 
-st.markdown('<div class="button-container">', unsafe_allow_html=True)
+def home():
+    st.markdown(
+        '<h1 class="titulo">Coisas úteis</h1>',
+        unsafe_allow_html=True
+    )
 
-st.page_link(ias, label="👥 IA's")
+    st.page_link(ias, label="👥 IA's")
 
-st.markdown('</div>', unsafe_allow_html=True)
+    botoes_ias()
 
 
 # ================= PÁGINAS =================
