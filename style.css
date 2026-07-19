@@ -1,6 +1,12 @@
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .botoes{
     background: #2f80ed;
-    width: 100%;
     color: white !important;
     border: none;
     border-radius: 200px;
@@ -8,11 +14,7 @@
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    text-decoration: none;
 }
 
 /* regra para o site se adaptar a celulares, manter SEMPRE no final do css */
